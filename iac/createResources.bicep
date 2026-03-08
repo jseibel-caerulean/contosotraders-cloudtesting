@@ -855,7 +855,8 @@ resource ui2stgacc_roledefinition 'Microsoft.Authorization/roleDefinitions@2022-
   scope: subscription()
   // This is the Storage Account Contributor role, which is the minimum role permission we can give. 
   // See https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#:~:text=17d1049b-9a84-46fb-8f53-869881c3d3ab
-  name: '17d1049b-9a84-46fb-8f53-869881c3d3ab'
+ // changed 17d1049b-9a84-46fb-8f53-869881c3d3ab to b24988ac-6180-42a0-ab88-20f7382dd24c because I'm getting an error about duplicate name
+  name: 'b24988ac-6180-42a0-ab88-20f7382dd24c'
 }
 
 // This requires the service principal to be in 'owner' role or a custom role with 'Microsoft.Authorization/roleAssignments/write' permissions.
