@@ -776,7 +776,7 @@ resource uistgacc_mi 'Microsoft.ManagedIdentity/userAssignedIdentities@2022-01-3
   tags: resourceTags
 }
 
-resource uistgacc_roledefinition 'Microsoft.Authorization/roleDefinitions@2022-04-01' existing = {
+resource uistgacc_roledefinition 'Microsoft.Authorization/roleDefinitions@2022-04-02' existing = {
   scope: subscription()
   // This is the Storage Account Contributor role, which is the minimum role permission we can give. 
   // See https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#:~:text=17d1049b-9a84-46fb-8f53-869881c3d3ab
